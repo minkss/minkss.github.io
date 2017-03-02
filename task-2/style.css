@@ -1,7 +1,21 @@
 body{
     font-family: Microsoft Yahei,sans-serif;
     background: #ccc;
+    margin: 0;
+    padding: 0;
 }
-div.article,div.pictures{
+div.container{
+    padding: 25px;
+}
+div.article,div.pictures,div.aside{
     background: white;
+    padding: inherit;
+    margin-bottom: 20px;
+}
+div.footer{
+    background: #000;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
