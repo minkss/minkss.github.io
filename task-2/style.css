@@ -1,0 +1,7 @@
+body{
+    font-family: Microsoft Yahei,sans-serif;
+    background: #ccc;
+}
+div.article,div.pictures{
+    background: white;
+}
