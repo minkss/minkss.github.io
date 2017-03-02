@@ -12,10 +12,120 @@ div.article,div.pictures,div.aside{
     padding: inherit;
     margin-bottom: 20px;
 }
+div.aside{
+    margin-bottom: 0;
+    margin-top: 40px;
+}
 div.footer{
     background: #000;
     color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+div.article p{
+    text-indent: 2em;
+}
+
+/*fix the detail*/
+
+/*aside*/
+div.aside h2{
+    padding: 10px 0;
+    padding-left: 10px;
+    border-left: 2px solid silver;
+    font-size: 16px;
+}
+
+form span{
+    display: inline-block;
+    width: 400px;
+    text-align: right;
+    padding-right: 10px;
+}
+form p.hint{
+    padding-left: 410px;
+    color: silver;
+}
+form textarea{
+    width: 800px;
+    height: 112px;
+    font-size: 18px;
+    font-weight: bold;
+}
+label.textarea span{
+    vertical-align: top;
+}
+#submit-button{
+    width: 100%;
+    padding: 10px 0;
+    background: #4c00ff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/*last article*/
+td,th{
+    border: 1px solid silver;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #311c1c;
+    color: white;
+}
+thead th{
+    padding: 5px 0;
+}
+tfoot{
+    background: #ccc;
+}
+tfoot th,tfoot td{
+    padding: 5px 0;
+}
+table caption{
+    text-align: left;
+    font-weight: bolder;
+}
+ol{
+    font-weight: bolder;
+}
+
+/*pictures*/
+figure{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid silver;
+}
+figcaption{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/*the nav-bar*/
+div.nav-bar{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+}
+div.nav-bar ul{
+    float: right;
+    margin-right: 10px;
+}
+div.nav-bar ul li{
+    display: inline-block;
+}
+div.nav-bar li a{
+    color: white;
+    display: inline-block;
+    padding: 10px 0;
+    margin-right: 10px;
+    text-decoration: none;
 }

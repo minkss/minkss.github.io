@@ -4,9 +4,9 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="nav-bar" role="navigation">
-            <img src="../images/logo.png">
-            <ul>
+        <div class="nav-bar">
+            <a href="#"><img src="../images/logo.png"></a>
+            <ul  role="navigation">
                 <li><a href="#">导航链接一</a></li>
                 <li><a href="#">导航链接二</a></li>
                 <li><a href="#">导航链接三</a></li>
@@ -77,8 +77,9 @@
                     <li>排名2</li>
                     <li>排名3</li>
                 </ol>
-                <p>下面是一个表格，给表格加了一个border</p>
-                <table border="1">
+
+                <table>
+                    <caption>下面是一个表格，给表格加了一个border="1"</caption>
                     <thead>
                         <tr>
                             <th scope="col">表头</th>
@@ -90,22 +91,22 @@
                         <tr>
                             <td>表格内容单元格</td>
                             <td>表格内容单元格</td>
-                            <td>操作</td>
+                            <td><a href="#">操作</a></td>
                         </tr>
                         <tr>
                             <td>表格内容单元格</td>
                             <td>表格内容单元格</td>
-                            <td>操作</td>
+                            <td><a href="#">操作</a></td>
                         </tr>
                         <tr>
                             <td>表格内容单元格</td>
                             <td>表格内容单元格</td>
-                            <td>操作</td>
+                            <td><a href="#">操作</a></td>
                         </tr>
                         <tr>
                             <td>表格内容单元格</td>
                             <td>表格内容单元格</td>
-                            <td>操作</td>
+                            <td><a href="#">操作</a></td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -118,30 +119,43 @@
             </div>
             <div class="aside">
                 <h2>这里以后是一个侧栏，侧栏标题</h2>
-                <h3>侧栏注册窗口标题</h3>
                 <form action="" method="">
-                    <label>请输入邮箱地址：<input type="text" name="email" placeholder="这是一个文本输入框"></label>
-                    <p>邮箱地址请按要求格式输入</p>
-                    <label>请输入密码：<input type="password" name="passwd" placeholder="这是一个文本输入框"></label>
-                    <label>请重复输入密码：<input type="password" name="passwd-repeat" placeholder="这是一个文本输入框"></label>
-                    <p>密码请为6-16位英文数字</p>
-                    性别：
-                    <label><input type="radio" name="gender" value="male" checked>男</label>
-                    <label><input type="radio" name="gender" value="female">女</label>
-                    <label for="city">城市：</label>
-                    <select id="city" name="city">
-                        <option value="北京">北京</option>
-                        <option value="成都">成都</option>
-                        <option value="南京">南京</option>
-                        <option value="广州">广州</option>
-                        <option value="上海">上海</option>
-                    </select>
-                    爱好：
-                    <label><input type="checkbox" name="interest" value="exercise">运动</label>
-                    <label><input type="checkbox" name="interest" value="art">艺术</label>
-                    <label><input type="checkbox" name="interest" value="science">科学</label>
-                    <label>个人描述：<textarea name="self-description">这是一个多行输入框，输入您的个人描述</textarea></label>
-                    <input type="submit" value="确认提交">
+                    <p>
+                     <label><span>请输入邮箱地址：</span><input type="text" name="email" placeholder="这是一个文本输入框"></label>
+                    </p>
+                    <p class="hint">邮箱地址请按要求格式输入</p>
+                    <p>
+                        <label><span>请输入密码：</span><input type="password" name="passwd" placeholder="这是一个文本输入框"></label>
+                    </p>
+                    <p>
+                        <label><span>请重复输入密码：</span><input type="password" name="passwd-repeat" placeholder="这是一个文本输入框"></label>
+                    </p>
+                    <p class="hint">密码请为6-16位英文数字</p>
+                    <p>
+                        <span>性别：</span>
+                        <label><input type="radio" name="gender" value="male" checked>男</label>
+                        <label><input type="radio" name="gender" value="female">女</label>
+                    </p>
+                    <p>
+                        <label for="city"><span>城市：</span></label>
+                        <select id="city" name="city">
+                            <option value="北京">北京</option>
+                            <option value="成都">成都</option>
+                            <option value="南京">南京</option>
+                            <option value="广州">广州</option>
+                            <option value="上海">上海</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>爱好：</span>
+                        <label><input type="checkbox" name="interest" value="exercise">运动</label>
+                        <label><input type="checkbox" name="interest" value="art">艺术</label>
+                        <label><input type="checkbox" name="interest" value="science">科学</label>
+                    </p>
+                    <p>
+                        <label class="textarea"><span>个人描述：</span><textarea name="self-description">这是一个多行输入框，输入您的个人描述</textarea></label>
+                        <input id="submit-button" type="submit" value="确认提交">
+                    </p>
                 </form>
             </div>
         </div>
