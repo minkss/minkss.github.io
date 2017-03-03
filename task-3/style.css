@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 14px;
+}
+.team-post{
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #999;
+    min-width: 845px;
+}
+
+.clear:after{
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+
+.team-shot{
+    box-sizing: border-box;
+    width: 200px;
+    float: left;
+    padding: 20px;
+    border: inherit;
+    background-color: #fff;
+}
+.team-shot img{
+    border: inherit;
+}
+.team-shot h1{
+    font-size: 14px;
+    float: right;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.team-members{
+    box-sizing: border-box;
+    width: 120px;
+    padding: 20px 20px 0 20px;
+    float: right;
+    border: inherit;
+    background-color: #fff;
+}
+.team-members img{
+    margin-bottom: 20px;
+}
+
+
+
+.team-intro{
+    border: inherit;
+    margin-left: 220px;
+    margin-right: 140px;
+    background-color: #fff;
+    padding: 20px;
+}
