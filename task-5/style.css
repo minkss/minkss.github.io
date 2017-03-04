@@ -15,6 +15,9 @@ body{
     padding: 20px;
     margin-bottom: 20px;
 }
+.last{
+    margin-bottom: 0;
+}
 /*container*/
 div.container{
     background-color: #ccc;/*如果不声明border或者padding的话，就会观察到margin合并的现象*/
@@ -137,3 +140,5 @@ ol{
 .pictures li img{
     margin-top: 10px;
 }
+
+/*没有量的积累，哪有质的突变。*/
