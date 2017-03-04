@@ -1,0 +1,136 @@
+body,.nav{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 860px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 14px;
+}
+.author,.post-time{
+    color: silver;
+}
+/*container*/
+div.container{
+    background-color: #ccc;/*如果不声明border或者padding的话，就会观察到margin合并的现象*/
+    padding: 20px;
+    position: relative;
+    padding-right: 422.5px;
+}
+
+.article,.aside,.pictures{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/*nav-bar*/
+.nav{
+    width: 100%;
+    background-color: #000;
+    height: 65px;
+    overflow: hidden;/*清除浮动*/
+}
+.nav li{
+    float: right;
+}
+/*如果用.home 做选择器,权值不够，不能覆盖上一条*/
+li.home{
+    float: left;
+}
+
+.nav li a{
+    display: block;
+    padding: 23.5px;
+    color: #fff;
+    text-decoration: none;
+}
+li.home a{
+    display: inline;
+    padding: 0;
+}
+
+/*footer*/
+.footer p{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/*aside*/
+.aside form span{
+    /*inline element can't apply width:*/
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+p.hint{
+    margin-left: 150px;
+}
+#submit-button{
+    width: 100%;
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 16px;
+}
+#submit-button:hover{
+    cursor: pointer;
+}
+.self-description{
+    vertical-align: top;
+}
+.aside{
+    position: absolute;/*相对border定的位*/
+    right: 20px;
+    top: 20px;
+}
+
+/*last article*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid silver;
+}
+
+thead{
+    background: #311c1c;
+    color: white;
+}
+thead th{
+    padding: 5px 0;
+}
+tfoot{
+    background: #ccc;
+}
+tfoot th,tfoot td{
+    padding: 5px 0;
+}
+table caption{
+    text-align: left;
+    font-weight: bold;
+}
+ol{
+    font-weight: bold;
+}
+
+/*pictures*/
+.pictures ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.pictures li{
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border: 1px solid #999;
+}
+.pictures li img{
+    margin-top: 10px;
+}
