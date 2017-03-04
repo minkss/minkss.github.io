@@ -28,29 +28,25 @@ div.container{
 
 
 /*nav-bar*/
-.nav{
-    width: 100%;
+.nav-bar{
     background-color: #000;
     height: 65px;
     overflow: hidden;/*清除浮动*/
 }
-.nav li{
+.nav-bar ul{
     float: right;
 }
-/*如果用.home 做选择器,权值不够，不能覆盖上一条*/
-li.home{
+.logo{
     float: left;
 }
-
-.nav li a{
-    display: block;
-    padding: 23.5px;
-    color: #fff;
-    text-decoration: none;
+.nav-bar ul li{
+    float: left;
 }
-li.home a{
-    display: inline;
-    padding: 0;
+.nav-bar ul li a{
+    display: block;
+    padding: 23px;
+    color: white;
+    text-decoration: none;
 }
 
 /*footer*/
