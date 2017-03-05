@@ -1,0 +1,400 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+.paper{
+    width: 892px;/*cause it's not border-box,got minus the padding*/
+    height: 1386px;
+    margin: 44px auto;
+    background-color: #fff;
+    padding: 0 44px;
+}
+
+.clearfix:after{
+    content: '.';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/*header*/
+.header{
+    border-bottom: 2px solid #938e8c;
+    position: relative;
+}
+.logo{
+    margin: 0;
+    width: 110px;
+    height: 61px;
+    background-color: #c11010;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.logo span,.date{
+    font-family: "黑体";
+    font-size: 12px;
+}
+.logo span{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    padding-bottom: 5px;
+}
+.date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #d45d5c;
+}
+
+
+/*.post*/
+.post{
+    margin-top: 34px;
+}
+
+/*post-img*/
+
+.post-img{
+    width: 641px;
+    height: 301px;
+    position: relative;
+}
+.post .left,.post .right{
+    position: absolute;
+    width: 191px;
+    height: 301px;
+    background-color: rgba(0,0,0,0.3);
+}
+.post .left{
+    left: 0;
+}
+.post .right{
+    right: 0;
+}
+
+/*.abstract*/
+.abstract{
+    float: right;
+    width: 203px;
+    border-top: 2px solid #cc8091;
+    padding-top: 6px;
+}
+.title{
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000;
+    text-decoration: underline;
+}
+.title{
+    margin: 0;
+    padding: 0;
+}
+.title span{
+    font-size: 1.2em;
+}
+b{
+    font-weight: normal;/*清除b标签的默认样式*/
+}
+.message{
+    font-family: 楷体,sans-serif;
+    font-size: 12px;
+    color: #676767;
+    line-height: 10px;/*当该元素为inline元素时，这条不起作用，换成p好了，为什么？*/
+    margin-top: 0;
+}
+.big-number{
+    font-size: 116px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-style: italic;
+    color: #75b86b;
+    margin-left: -25px;
+    margin-top: -16px;
+    margin-bottom: 0;
+}
+.special-effect{
+    font-family: Microsoft Yahei;
+    color: #cc8091;
+    position: relative;
+    margin-top: -20px;
+}
+.float-number{
+    font-size: 55px;
+}
+.special-effect div{
+    position: absolute;
+    bottom: 12px;
+    left: 85px;
+}
+.first-line{
+    font-size: 21px;
+}
+.second-line{
+    font-size: 12px;
+}
+/*.news*/
+.news div{
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+.news h2{
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.left-para h2{
+    color: #418c59;
+}
+.middle-para h2{
+    color: #d2994f;
+}
+.right-para h2{
+    color: #cc7680;
+}
+.news p{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.left-para p{
+    font-family: 宋体,sans-serif;
+    color: #767777;
+}
+.middle-para p{
+    font-family: Microsoft Yahei,sans-serif;
+    color: #231815;
+    opacity: 0.7;
+}
+.right-para .description{
+    line-height: 2;
+}
+.right-para .data{
+    font-family: Microsoft Yahei,sans-serif;
+    line-height: 16px;
+    margin-top: 40px;/*活用盒子和各种定位*/
+}
+.data b{
+    color: #cd4a48;
+    opacity: 0.7;
+    font-style: oblique;
+}
+
+/*special columns*/
+.special-column{
+    width: 892px;
+    border-bottom: 1px solid #938e8c;
+    margin-top: 60px;
+    padding-bottom: 32px;
+}
+
+/*first-article*/
+.first-article{
+    width: 415px;
+    float: left;
+}
+.first-article h2{
+    font-family: 黑体,sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    color:#11456b;
+    line-height: 36px;/*存疑*/
+    border-bottom: 2px solid #11456b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.first-article h2 .first-word{
+    font-size: 72px;
+    color: #f5e327;
+    font-style: oblique;
+}
+
+.first-article h2 .zh-headline{
+    font-size: 33px;
+}
+
+.art-word{
+    float: left;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 70px;
+    color: #f5e327;
+    margin-top: -16px;/*note this*/
+}
+.first-article img{
+    float: right;
+    margin: 16px;
+    margin-bottom: 0;
+}
+.first-article p{
+    font-family: 宋体,sans-serif;
+    font-size: 12px;
+    color: #767777;
+    line-height: 16px;
+    margin: 0;
+}
+p.indent{
+    text-indent: 2em;
+}
+
+/*second-article*/
+/*post*/
+.second-article{
+    width: 459px;/*浮动的时候，记住设置宽度*/
+    float: right;
+}
+.photo{
+    position: relative;
+}
+.photo div{
+    position: absolute;
+    bottom: 0;
+    width: 458px;
+    height: 61px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+    /*先设background-color,再设opacity的方式就达不到效果*/
+}
+.photo p{
+    height: 42px;
+    padding-top: 2px;/*think about the box model*/
+    margin: 8.5px 0;
+    margin-left: 40px;
+    padding-left: 10px;
+    border-left: 3px solid #72b16a;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 26px;
+    color: white;
+}
+.photo p span{
+    font-size: 12px;
+    color: #72b16a;
+    font-style: oblique;
+    margin-left: 1em;/*inline element can apply left and right margin,padding*/
+    letter-spacing: 0.1em;/*用letter-spacing控制中文字间距*/
+}
+
+/*content*/
+
+.content{
+    position: relative;
+    width: 459px;
+    height: 300px;
+    padding-top: 18px;
+    margin-top: 18px;
+    background-color: #e4dabe;
+}
+.trangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
+}
+
+.content p.list-item{
+    position: relative;
+    padding: 0 40px;
+    color: #5a5b5b;
+    font-family: 宋体,sans-serif;
+}
+p .bigger{
+    margin-left: 1em;
+    font-size: 16px;
+}
+p .smaller{
+    position: absolute;
+    right: 40px;/*绝对定位是相对border的位置定位，不是padding*/
+    font-size: 12px;
+    font-style: oblique;
+}
+
+/*number*/
+div.number{
+    position: absolute;
+    width: 260px;
+    height: 160px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    color: #fff;
+}
+
+.zero{
+    float: left;
+    padding-left: 10px;
+    margin-top: 7.5px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 110px;
+}
+
+.en-numbers{
+    float: right;
+    width: 170px;
+    height: 86px;
+    margin-top: 37px;
+    padding: 0 5px;
+    border-left: 2px solid #fff;
+    color: #fff;
+    font-family: 黑体,sans-serif;
+}
+
+.en-numbers .top{
+    font-size: 21px;
+    font-style: oblique;
+    line-height: 24px;
+    margin: 0;
+}
+.en-numbers .bottom{
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 6px;
+}
+
+/*greetings*/
+p.greetings{
+    position: absolute;
+    width: 165px;
+    padding-left: 20px;
+    right: 20px;
+    bottom: 20px;
+    font-family: 黑体,sans-serif;
+    font-size: 14px;
+    color: #5a5b5b;
+    font-style: oblique;
+    line-height: 16px;
+}
+p.greetings span {
+    font-family: 黑体,sans-serif;
+    font-size: 72px;
+    color: #d45d5c;
+}
+.left-quotation{
+    float: left;
+    margin-top: 16px;
+    height: 0;
+    margin-left: -50px;
+    padding-right: 20px;
+}
+.right-quotation{
+    float: right;
+    margin-top: 30px;
+    margin-right: -20px;/*try,try,try*/
+}
+/*footer*/
+.footer{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: 黑体,sans-serif;
+    font-size: 12px;
+    color: #d45d5c;
+}
