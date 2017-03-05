@@ -199,6 +199,10 @@ b{
     width: 415px;
     float: left;
 }
+.first-article img{
+    width: 163px;
+    height: 300px;
+}
 .first-article h2{
     font-family: 黑体,sans-serif;
     font-weight: bold;
@@ -251,6 +255,10 @@ p.indent{
 }
 .photo{
     position: relative;
+}
+.photo img{
+    width: 458px;
+    height: 275px;
 }
 .photo div{
     position: absolute;
