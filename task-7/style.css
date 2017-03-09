@@ -1,0 +1,613 @@
+body,h1,h2,h3,h4,h5,h6,ul{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+body{
+    min-width: 1280px;
+}
+/*.nav-bar*/
+.nav-bar{
+    height: 57px;
+    line-height: 57px;/*关键*/
+    overflow: hidden;
+}
+.nav-bar a.company-logo{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar h1{/*没有float*/
+    font-family: 黑体,sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: #393a3e;
+    margin-left: 200px;
+    padding-left: 40px;
+    background: url(../images/task-7/logo.png) no-repeat left;
+}
+
+.nav-bar ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+}
+.nav-bar ul li{
+    float: left;
+}
+.nav-bar a{
+    text-decoration: none;
+    display: block;
+    height: 54px;
+    margin: 0 10px;
+    padding: 0 10px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 14px;
+    color: #787b83;
+}
+.nav-bar ul li a:hover{
+    border-bottom: 3px solid #e74f4d;
+    color: #ec7e7c;
+}
+.nav-bar .log-in{
+    color: #e9605e;
+    padding-left: 20px;
+    margin-right: 150px;
+    background: url(../images/task-7/icon-2.jpg) no-repeat left;
+}
+
+/*.caontainer*/
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*post*/
+.post{
+    width: 1163px;
+    height: 563px;
+    background: url(../images/task-7/pic01.jpg);
+    padding-top: 291px;
+    padding-left: 117px;
+    font-family: Microsoft Yahei,sans-serif;
+    color: #fff;
+}
+.post h2{
+    font-size: 60px;
+    margin: 0;
+    font-weight: normal;
+}
+.post p{
+    font-size: 21px;
+}
+.post button{
+    font-size: 30px;
+    color: #fff;
+    width: 331px;
+    height: 65px;
+    background-color: #e74f4d;
+    margin-top: 40px;
+    border: none;
+}
+.post button:hover{
+    cursor: pointer;
+}
+
+
+/*.introduction*/
+.introduction{
+    overflow: hidden;
+}
+.introduction>div{
+    float: left;
+    width: 320px;
+    text-align: center;
+    line-height: 250px;
+}
+.introduction div div{
+    /*这里必须设为inline-block
+    去掉这一行，你就发现效果消失，可见包含块
+    line-height是不能约束block级别的元素的。
+    而如果设为inline，对inline设置line-height是无效的*/
+
+    /*总结：父元素设置line-height,如果子元素是inline,inline-block，
+    会产生垂直居中的效果，如果子元素是block元素，则不仅不能垂直居中，line-height
+    也不能为父元素提供高度*/
+
+    display: inline-block;
+    line-height: 1em;/*覆盖继承line-height*/
+    vertical-align: middle;
+}
+.introduction p{
+    font-family: 黑体,sans-serif;
+    font-size: 14px;
+    color: #767777;
+    height: 50px;
+    width: 168px;
+    margin-top: 46px;
+    padding: 0 53px;
+    border-right: 2px solid #767677;
+}
+p.no-border{/*权值要够*/
+    border: none;
+}
+
+
+
+/*.question*/
+.question{
+    background-color: #edecec;
+    text-align: center;
+    height: 361px;
+}
+.question p{
+    font-family: 黑体,sans-serif;
+    font-size: 54px;
+    color: #a1a1a1;
+    margin-top: 50px;
+}
+.question img{
+    margin-top: 88px;
+}
+
+/*.search-by-ciry*/
+.search-by-city{
+    width: 1280px;
+    height: 288px;
+    padding-top: 52px;
+    background: url(../images/task-7/pic02.jpg);
+    text-align: center;
+    font-family: Microsoft Yahei,sans-serif;
+}
+.search-by-city h2{
+    margin: 0;
+    font-size: 21px;
+    color: #fff;
+    font-weight: normal;
+}
+.search-by-city .line{
+    display: inline-block;
+    width: 31px;
+    height: 0;
+    border-top: 3px solid #fff;
+    margin-top: 10px;
+}
+.search-by-city p{
+    font-size: 12px;
+    color: #fff;
+    margin-top: 20px;
+}
+.search-by-city select{
+    width: 224px;
+    height: 36px;
+    padding-left: 12px;
+    background: #fff url(../images/task-7/pull-down-icon.png) no-repeat;
+    background-position: right 6px center;
+    color: #a8aaaa;
+     font-size: 12px;
+}
+
+.search-by-city .button{
+    width: 236px;
+    height: 36px;
+    background-color: #be4e48;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 24px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-weight: bold;
+    border: none;
+}
+.search-by-city .button:hover{
+    cursor: pointer;
+}
+
+
+/*.city-info*/
+.city-info{
+    height: 502px;
+    text-align: center;
+    padding-top: 102px;
+    padding-left: 147px;
+    background-color: #f7f7f7;
+    font-family: Microsoft Yahei,sans-serif;
+}
+.city-info .city{
+    width: 218px;
+    float: left;
+    margin-right: 36px;
+
+}
+.city-info img{
+    width: 204px;
+    height: 310px;
+    border: 1px solid #e0e0e0;
+    padding: 14px 9px;
+}
+.city-info h3,p{
+    margin: 12px;
+}
+.city-info h3{
+    font-size: 16px;
+}
+.city-info .head-line{
+    font-size: 24px;
+    letter-spacing: 1em;
+}
+.city-info p{
+    font-size: 14px;
+    color: #888989;
+}
+
+
+/*.new-world*/
+.new-world{
+    overflow: hidden;
+    font-family: Microsoft Yahei,sans-serif;
+}
+.new-world .left{
+    float: left;
+    position: relative;
+    width: 852px;
+    height: 565px;
+    background: url(../images/task-7/pic07.jpg);
+    color: #fff;
+    text-align: center;
+}
+.new-world .left h3{
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 120px;
+}
+.new-world .left h4{
+    font-size: 158px;
+    font-weight: normal;
+    margin-top: -40px;
+}
+.new-world .left:after{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    content: "";
+    height:200px;
+    width: 0;
+    height: 0;
+    border-right: 24px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+.new-world .right{
+    width: 428px;
+    height: 565px;
+    float: right;
+}
+.new-world .right h2{
+    text-align: center;
+    margin-top: 164px;
+    font-family: 宋体,sans-serif;
+    font-size: 16px;
+}
+.new-world .right h2 i{
+    color: #e7504d;
+}
+.new-world .right p{
+    width: 290px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 宋体,sans-serif;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 30px;
+}
+.new-world .right button{
+    display: block;
+    width: 107px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 48px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 12px;
+    color: #e25c60;
+    border: 1px solid #e25c60;
+    background-color: #fff;
+}
+.new-world .right button:hover{
+    cursor: pointer;
+}
+.circle-icon {
+    text-align: center;
+    margin-top: 25px;
+}
+.circle-icon i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    border: 1px solid #929293;
+    margin: 0 7px;/*水平方向的margin不会合并*/
+}
+.circle-icon .first-child{
+    background-color: #929293;
+}
+
+/*.more-info*/
+.more-info{
+    overflow: hidden;
+    font-family: 黑体,sans-serif;
+}
+.more-info div{
+    width: 426px;
+    height: 518px;
+    float: left;
+    text-align: center;
+}
+.more-info .left{
+    background-color: #e74f4d;
+    color: #fff;
+}
+.more-info p{
+    margin: 0;
+    margin-top: 175px;
+    font-size: 21px;
+    line-height: 30px;
+}
+.more-info .line{
+    display: inline-block;/*为了设置宽度*/
+    width: 31px;
+    height: 0;
+    margin: 20px 0;
+}
+.more-info .left .line{
+    border-top: 3px solid #fff;
+}
+.more-info .middle .line{
+    border-top: 3px solid #e74f4d;
+}
+.more-info button{
+    width: 170px;
+    height: 44px;
+    font-size: 21px;
+    font-family: 黑体,sans-serif;
+}
+.more-info button:hover{
+    cursor: pointer;
+}
+.more-info .left button{
+    background-color: #e74f4d;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.more-info .middle button{
+    background-color: #fff;
+    color: #e74f4d;
+    border: 1px solid #e74f4d;
+}
+.more-info .art-pic{
+    position: relative;
+    width: 428px;
+    height: 518px;
+}
+.more-info .art-pic:after{
+    content: "";/*这句必须有*/
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    top: 50%;
+    margin-top: -16px;
+    left: 0;
+}
+
+/*.volunteer*/
+.volunteer{
+    height: 750px;
+    overflow: hidden;
+}
+.volunteer .head{
+    text-align: center;
+    margin-top: 116px;
+    margin-bottom: 100px;
+}
+.volunteer .head h2{
+    font-family: 黑体,sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+}
+.volunteer .head .line{
+    display: inline-block;
+    width: 31px;
+    height: 3px;
+    border: none;
+    background-color: #e85351;
+    line-height: 3px;
+}
+.volunteer .head p{
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.volunteer .content .agreement{
+    width: 294px;
+    float: left;
+    margin-bottom: 36px;
+    margin-left: 136px;
+}
+.volunteer .content .agreement h3{
+    font-family: 黑体,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.volunteer .content .agreement p{
+    margin: 0;
+    margin-top: 28px;
+    font-family: 宋体,sans-serif;
+    font-size: 12px;
+    color: #9d9b9a;
+}
+.volunteer .content .agreement .moudle{
+    margin-bottom: 38px;
+}
+.volunteer .content .agreement .more-icon{
+    float: right;
+    padding-left: 20px;
+    color: #9d9b9a;
+    text-decoration: none;
+    background: url(../images/task-7/more-icon.png) no-repeat top 10px right 36px;
+}
+
+
+.volunteer .content .imformation{
+    position: relative;
+    width: 642px;
+
+    float: right;
+    margin-right: 140px;
+}
+.volunteer .content .imformation .left{
+    float: left;
+}
+.volunteer .content .imformation .right{
+    float: right;
+}
+#name,#age{
+    padding-left: 48px;
+    width: 262px;
+}
+#contact,#address{
+    padding-left: 72px;
+    width: 238px;
+}
+#dream-life{
+    padding-left: 158px;
+    width: 484px;
+}
+.volunteer .content .imformation .half-width{
+    display: inline-block;
+    height: 38px;
+    background-color: #ededee;
+    border: none;
+    margin-bottom: 16px;
+}
+.volunteer .content .imformation .full-width{
+    display: block;
+    width: 100%;
+    background-color: #ededee;
+    border: none;
+    margin-bottom: 16px;
+}
+.volunteer .content .imformation .button{
+    height: 38px;
+    font-family: 黑体,sans-serif;
+    font-size: 14px;
+}
+.volunteer .content .imformation .button:hover{
+    cursor: pointer;
+}
+.volunteer .content .imformation textarea{
+    padding: 0;
+    height: 108px;
+    padding-top: 10px;
+}
+.volunteer .content .imformation label{
+    position: absolute;
+    font-family: 宋体,sans-serif;
+    font-size: 12px;
+    color: #6c6868;
+}
+.volunteer .content .imformation .name{
+    top: 14px;
+    left: 16px;
+}
+.volunteer .content .imformation .age{
+    top: 14px;
+    left: 348px;
+}
+.volunteer .content .imformation .contact{
+    top: 70px;
+    left: 16px;
+}
+.volunteer .content .imformation .address{
+    top: 70px;
+    left: 348px;
+}
+.volunteer .content .imformation .dream-life{
+    top: 123px;
+    left: 16px;
+}
+/*.bottom*/
+.bottom .contact{
+    height: 358px;
+    background-color: #32353e;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.bottom .contact h3{
+    font-family: 黑体,sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 90px;
+}
+.bottom .contact p{
+    margin: 12px 0 30px 0;
+    font-family: 宋体,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.bottom .contact .email{
+    width: 412px;
+    padding-left: 20px;
+    height: 40px;
+    border: none;
+}
+.bottom .contact .submit{
+    width: 82px;
+    height: 42px;
+    margin-left: -8px;
+    background-color: #6f7278;
+    color: #fff;
+    border: none;
+}
+.bottom .contact .submit:hover{
+    cursor: pointer;
+}
+.bottom .contact .share{
+    margin-top: 30px;
+}
+.bottom .contact .share a{
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin: 0 13px;
+}
+.bottom .footer{
+    height: 58px;
+    background-color: #2f2f38;
+    color: #fff;
+    font-family: 宋体,sans-serif;
+}
+.bottom .footer span,.bottom .footer a{
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.bottom .footer .copyright{
+    float: left;
+    margin-left: 98px;
+}
+.bottom .footer .back-top{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    margin-right: 38px;
+}
