@@ -209,6 +209,8 @@ p.no-border{/*权值要够*/
 }
 
 
+
+
 /*.city-info*/
 .city-info{
     height: 502px;
@@ -219,10 +221,10 @@ p.no-border{/*权值要够*/
     font-family: Microsoft Yahei,sans-serif;
 }
 .city-info .city{
-    width: 218px;
     float: left;
+    position: relative;
+    width: 218px;
     margin-right: 36px;
-
 }
 .city-info img{
     width: 204px;
@@ -236,14 +238,19 @@ p.no-border{/*权值要够*/
 .city-info h3{
     font-size: 16px;
 }
-.city-info .head-line{
-    font-size: 24px;
-    letter-spacing: 1em;
-}
 .city-info p{
     font-size: 14px;
     color: #888989;
 }
+.city-info .city:hover img{
+    position: absolute;
+    top: 60px;
+    left: 0;/*要有的*/
+}
+.city-info .city:hover h3{
+    margin-top: 0;
+}
+
 
 
 /*.new-world*/
