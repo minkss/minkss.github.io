@@ -184,9 +184,13 @@ p.no-border{/*权值要够*/
     margin-top: 20px;
 }
 .search-by-city select{
+    border: none;
     width: 224px;
     height: 36px;
     padding-left: 12px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance: none;
     background: #fff url(../images/task-7/pull-down-icon.png) no-repeat;
     background-position: right 6px center;
     color: #a8aaaa;
