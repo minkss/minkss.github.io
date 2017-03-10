@@ -8,11 +8,12 @@ body{
 .col{
     background: #fff;
     min-height: 30px;
-    margin: 30px 15px 0 15px;
+    margin: 30px 15px 0 15px;/*水平方向的margin不会合并*/
 }
 .row{
     padding: 0 15px;
 }
+
 .row:after{
     display: block;
     content: "";
@@ -20,6 +21,8 @@ body{
     visibility: hidden;
     clear: both;
 }
+
+/*用calc()时，运算符两边必须有空格分割，否则无效*/
 @media screen and (min-width: 768px){
     .col-md-12{
         width: calc(100% - 30px);
@@ -57,7 +60,7 @@ body{
 
     }
     .col-md-5{
-        width: 41.66%;
+        width: calc(41.66% - 30px);
         float: left;
 
     }
@@ -67,7 +70,7 @@ body{
 
     }
     .col-md-3{
-        width: calc(25% -30px);
+        width: calc(25% - 30px);
         float: left;
 
     }
@@ -129,7 +132,7 @@ body{
 
     }
     .col-sm-3{
-        width: calc(25% -30px);
+        width: calc(25% - 30px);
         float: left;
 
     }
