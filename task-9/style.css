@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix:after,
+.clearfix:before{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.content-wrap{
+    width: 891px;
+}
+ul{
+    list-style: none;
+}
+
+
+
+/*@header*/
+header{
+    background-color: #2189bf;
+}
+
+.header{
+    height: 56px;
+    line-height: 56px;
+}
+
+.logo{
+    float: left;
+    width: 36px;
+    height: 36px;
+    background: url(./images/logo.png) no-repeat;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.login{
+    float: right;
+    color: #fff;
+    font-family: "黑体",sans-serif;
+    font-size: 12px;
+    padding-left: 18px;
+    background: url(./images/log-icon.png) no-repeat left center;
+    margin-right: 94px;
+}
+.search-form{
+    float: right;
+    margin-right: 21px;
+}
+.search-form input{
+    box-sizing: border-box;
+    width: 313px;
+    height: 28px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 12px 0 35px;
+    background: #fff url(./images/search-icon.png) no-repeat left 17px center;
+}
+
+
+/*@side-bar*/
+.side-bar{
+    float: left;
+    width: 260px;
+    height: 1213px;
+    background-color: #2a2e3d;
+}
+
+.side-bar .user{
+    height: 150px;
+    overflow: hidden;/*避免子margin溢出*/
+}
+
+.user .user-info{
+    color: #fff;
+    margin-top: 18px;
+    line-height: 57px;
+}
+
+.user-info .photo-border{
+    margin-left: 45px;
+    text-align: center;
+}
+
+.user-info .user-id{
+    margin-left: 18px;
+}
+
+.user-info .photo-border,
+.user-info .user-id{
+    float: left;
+}
+
+.user-info .photo-border{
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    border: 1px solid #babab7;
+}
+
+.user-info .photo{
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    border-radius: 47px;
+    background-color: #bababe;
+    margin-top: 4px;
+}
+
+.user-achieve{
+    color: #6e8095;
+    margin-top: 24px;
+}
+
+.user-achieve .collect{
+    border-right: 2px solid #323647;
+}
+
+.user-achieve .collect,
+.user-achieve .fans{
+    float: left;
+    padding: 0 31px;
+    line-height: 13px;/*不知道为什么不加就有行距*/
+}
+
+.user-achieve .collect{
+    padding-left: 63px;
+}
+
+.user-achieve .collect-number,
+.user-achieve .fans-number{
+    font-family: 黑体,sans-serif;/*字体显示效果和psd并不相同*/
+    font-size: 16px;
+}
+
+.user-achieve .text{
+    font-family: 宋体,sans-serif;
+    font-size: 12px;
+}
+
+
+/*@report*/
+.report{
+      background-color: #383d4e;
+      padding: 14px 0;
+}
+
+.list li{
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+[type=checkbox]:checked ~ ul>li{/*~是兄弟选择器*/
+  height: auto;
+  margin-top: 18px;
+}
+
+.folder [type=checkbox]:checked + .trigger{/*选择器要精确*/
+  background: url(./images/light-arrow.png) no-repeat left center,
+              url(./images/light-folder-icon.png) no-repeat left 16px center;
+}
+
+.main-list input{
+  display: none;
+}
+
+.trigger:hover{
+  cursor: pointer;
+}
+
+.main-list {
+  margin-left: 45px;
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+.folder{
+  margin-left: 24px;
+}
+
+.folder  .trigger{
+  padding-left: 32px;
+  background: url(./images/dark-arrow.png) no-repeat left center,
+              url(./images/dark-folder-icon.png) no-repeat left 16px center;
+}
+
+.folder .list{
+  margin-left: 33px;
+}
+
+.folder .list li{
+  padding-left: 15px;
+  background: url(./images/file.png) no-repeat left center;
+}
+
+.main-list>li>.trigger{
+  padding-left: 25px;
+  background: url(./images/hand-icon.png) no-repeat left center;
+}
+
+.collection p,
+.sharing p,
+.pictures p,
+.grow p,
+.account p{
+  margin-left: 45px;
+  margin-top: 36px;
+  padding-left: 25px;
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+  color: #6e8095;
+}
+
+.collection p{
+  background: url(./images/star.png) no-repeat left center;
+}
+
+.sharing p{
+  background: url(./images/share.png) no-repeat left center;
+}
+
+.pictures p{
+  background: url(./images/star.png) no-repeat left center;
+}
+
+.grow p{
+  background: url(./images/star.png) no-repeat left center;
+}
+
+.account p{
+  background: url(./images/account.png) no-repeat left center;
+}
