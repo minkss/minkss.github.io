@@ -48,8 +48,8 @@
                         <input type="checkbox" id="file-1">
                         <label class="trigger" for="file-1">文件一</label>
                         <ul class="list">
-                          <li><a href="#" target="_blank">文档一</a></li>
-                          <li><a href="#" target="_blank">文档二</a></li>
+                          <li><a href="#" target="_blank">文档1</a></li>
+                          <li><a href="#" target="_blank">文档2</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -59,8 +59,8 @@
                         <input type="checkbox" id="file-2">
                         <label class="trigger" for="file-2">文件一</label>
                         <ul class="list">
-                          <li><a href="#" target="_blank">文档一</a></li>
-                          <li><a href="#" target="_blank">文档二</a></li>
+                          <li><a href="#" target="_blank">文档1</a></li>
+                          <li><a href="#" target="_blank">文档2</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -70,8 +70,8 @@
                         <input type="checkbox" id="file-3">
                         <label class="trigger" for="file-3">文件一</label>
                         <ul class="list">
-                          <li><a href="#" target="_blank">文档一</a></li>
-                          <li><a href="#" target="_blank">文档二</a></li>
+                          <li><a href="#" target="_blank">文档1</a></li>
+                          <li><a href="#" target="_blank">文档2</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -96,16 +96,68 @@
               <p>账户信息</p>
             </div>
         </div>
+
+
         <div class="main-content">
             <div class="route-nav">
-                <a href="">C站</a>
-                <a href="">个人报表</a>
-                <a href="">文件一</a>
-                <a href="">文档一</a>
+                <a href="">C站</a>/
+                <a href="">个人报表</a>/
+                <a href="">文件一</a>/
+                <a class="current" href="">文档一</a>
             </div>
-            <div class="content-wrap">
+            <div class="content-wrap the-refer">
+              <form class="refer clearfix"><!--为了消除inline-block之间的间距，标签之间不留空格-->
+                <div class="user-input clearfix">
+                  <div class="panel first-panel">
 
+                    <p>
+                      <label for="items">查询项</label><select id="items" name="items">
+                        <option value="1" selected>第一项</option>
+                        <option value="2" selected>第二项</option>
+                        <option value="3" selected>第三项</option>
+                      </select>
+                    </p>
+                  </div>
+
+                  <div class="panel second-panel">
+                    <p>
+                      <label for="buyer">买方</label><select id="buyer" name="buyer">
+                        <option value="A">小A</option>
+                        <option value="B">小B</option>
+                      </select>
+                    </p>
+                    <p>
+                      <label for="seller">卖方</label><select id="seller" name="seller">
+                        <option value="C">小C</option>
+                        <option value="D">小D</option>
+                      </select>
+                    </p>
+                    <span class="change-text">换</span>
+                  </div>
+
+                  <div class="panel">
+                    <p>
+                      <label for="date">日期</label><input id="date" type="date"><label for="time">总耗时</label><select id="time" name="time">
+                        <option value="8">8 天</option>
+                        <option value="7">7 天</option>
+                      </select>
+                    </p>
+                    <p>
+                      <label for="amount">人数</label><select id="amount" name="amount">
+                        <option value="10">10 人</option>
+                        <option value="8">8 人</option>
+                      </select><label for="deals">成交项</label><select id="deals">
+                        <option value="10">10 项</option>
+                        <option value="9">9 项</option>
+                      </select>
+                    </p>
+                  </div>
+
+                </div>
+                <input class="button" type="submit" value="搜索">
+              </form>
             </div>
+
             <div class="content-wrap">
 
             </div>
@@ -120,6 +172,5 @@
             </div>
         </div>
     </div>
-    <div class="container">
 </body>
 </html>
