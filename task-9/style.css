@@ -28,6 +28,10 @@ ul{
     list-style: none;
 }
 
+select:hover,
+.button:hover{
+  cursor: pointer;
+}
 
 body{
     background-color: #eeeeed;
@@ -333,6 +337,7 @@ select {
     border: none;
 }
 
+
 .panel{
   float: left;
 }
@@ -447,7 +452,8 @@ select {
   background: url(./images/right-arrow.png) no-repeat center;
 }
 
-.previous:hover,.next:hover{
+.previous:hover,
+.next:hover{
   cursor: pointer;
 }
 
@@ -465,8 +471,13 @@ select {
     margin-top: 11px;
 }
 
-.previous + .data{
+.previous +.data{
   border-top: 3px solid #4388c8;
+}
+
+.data:hover{
+  border-top: 3px solid #4388c8;
+  cursor: pointer;
 }
 
 .data .money{
