@@ -29,6 +29,9 @@ ul{
 }
 
 
+body{
+    background-color: #eeeeed;
+}
 
 /*@header*/
 header{
@@ -261,7 +264,6 @@ header{
 /*@main-content*/
 .main-content{
   margin-left: 260px;
-  background-color: #eeeeed;
 }
 
 .route-nav{
