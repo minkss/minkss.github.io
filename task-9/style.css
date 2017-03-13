@@ -660,6 +660,11 @@ h3,h4{
   border: 1px solid #d1d2d3;
 }
 
+.fourth-row .left-panel table td:hover{
+  cursor: pointer;
+  background-color: #f4f5f7;
+}
+
 .fourth-row .row-1 td,
 .fourth-row .row-3 td,
 .fourth-row .row-5 td{
@@ -950,7 +955,7 @@ h3,h4{
   margin-top: 18px;
   border-collapse: collapse;
   text-align: center;
-  font-family: 黑体,sans-serif;
+  font-family: SimHei,sans-serif;
   font-size: 12px;
 }
 
@@ -985,8 +990,9 @@ h3,h4{
   border-bottom: none;
 }
 
-.fifth-row .ranking table tr:nth-child(2){
+.fifth-row .ranking table tr:hover{
   background-color: #f4f5f6;
+  cursor: pointer;
 }
 
 .fifth-row .ranking .histogram {
@@ -1051,9 +1057,4 @@ h3,h4{
 .fifth-row .ranking table tr:nth-child(11) span.color{
   width: 54px;
   background-color: #7fcbf0;
-}
-
-
-.fifth-row .ranking table tr:nth-child(2) td:nth-child(2){
-  background: url(./images/hand-pointer.png) no-repeat right 16px center;
 }
