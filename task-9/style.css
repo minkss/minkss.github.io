@@ -283,7 +283,10 @@ header{
   color: #75a0c6;
 }
 
-/*refer*/
+
+
+/*@*/
+
 .refer{
   width: 891px;
   height: 86px;
@@ -298,8 +301,10 @@ header{
     margin-top: 15px;
 }
 
-.the-refer{
+.content-wrap.first-row{
   margin-top: 19px;
+  border-left: 4px solid #848b97;
+  border-top: 3px solid #848b97;
 }
 
 select {
@@ -395,4 +400,660 @@ select {
 
 #time,#deals{
   background: url(./images/select-gray.png)  no-repeat right 5px center;
+}
+
+
+/*second-row*/
+
+.second-row{
+  height: 65px;
+  margin-top: 6px;
+  text-align: center;
+  font-family: Microsoft Yahei,sans-serif;
+}
+
+.second-row div{
+  float: left;
+  background-color: #fff;
+  height: 65px;
+  margin-right: 4px;
+  border-top: 1px solid #cacdd0;
+  border-left: 1px solid #cacdd0;
+}
+
+.second-row .history{
+  margin: 0;
+}
+
+.second-row .data{
+  width: 110px;
+}
+
+.second-row .next,.second-row .previous{
+  width: 30px;
+}
+
+.second-row .history{
+  width: 130px;
+}
+
+.previous{
+  background: url(./images/left-arrow.png) no-repeat center;
+}
+
+.next{
+  background: url(./images/right-arrow.png) no-repeat center;
+}
+
+.previous:hover,.next:hover{
+  cursor: pointer;
+}
+
+.data .time,.history
+{
+  font-size: 12px;
+}
+
+.data .time{
+  margin-top: 14px;
+  color: #323333;
+}
+
+.previous + .data .time{
+    margin-top: 11px;
+}
+
+.previous + .data{
+  border-top: 3px solid #4388c8;
+}
+
+.data .money{
+  color: #ec6500;
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+.data .money .money-sign{
+  color: #aeaead;
+  font-size: 14px;
+}
+
+.history p{
+  margin-top: 17px;
+  margin-left: 19px;
+  height: 31px;
+  line-height: 31px;
+  text-align: left;
+  padding-left: 43px;
+  background: url(./images/history.png) no-repeat left center;
+  color: #636363;
+}
+
+
+/*third-row*/
+.third-row{
+  height: 95px;
+}
+
+.third-row .deal-panel{
+  width: 197px;
+  height: 70px;
+  float: left;
+  background-color: #fff;
+  margin-right: 27px;
+  border: 1px solid #d3d5d8;
+}
+
+.deal-panel.fourth{
+  margin-right: 0;
+}
+
+.deal-panel .deal-numbers{
+  float: left;
+  margin-left: 8px;
+  margin-top: 18px;
+}
+
+.deal-panel .color-block{
+    float: right;
+    width: 61px;
+    height: 47px;
+    margin-right: 15px;
+    margin-top: 12px;
+
+}
+
+.third-row .headline{
+    text-align: left;
+    margin-top: 22px;
+    font-family: Microsoft Yahei,sans-serif;
+    font-size: 12px;
+    color: #323333;
+    padding-bottom: 7px;
+}
+
+.deal-panel.first{
+  border-left: 4px solid #43b29d;
+}
+
+.deal-panel.first .color-block{
+  background: #43b29d;
+}
+
+.deal-panel.second{
+  border-left: 4px solid #398bc2;
+}
+
+.deal-panel.second .color-block{
+  background: #398bc2;
+}
+
+.deal-panel.third{
+  border-left: 4px solid #d04b36;
+}
+
+.deal-panel.third .color-block{
+  background: #d04b36;
+}
+
+.deal-panel.fourth{
+  border-left: 4px solid #e2cd47;
+}
+
+.deal-panel.fourth .color-block{
+  background: #e2cd47;
+}
+
+.deal-panel .deal-numbers .number{
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+  color: #323333;
+  margin-bottom: 10px;
+}
+
+.deal-panel .deal-numbers .text{
+  font-family: 黑体,sans-serif;
+  font-size: 10px;
+  color: #aaa;
+}
+
+
+/*@fourth-row*/
+.fourth-row{
+    margin-top: 13px;
+}
+
+h3,h4{
+  font-weight: normal;
+}
+
+.fourth-row .left-panel{
+  float: left;
+  background-color: #fff;
+}
+
+.fourth-row .right-panel{
+  float: right;
+  background-color: #fff;
+}
+
+.fourth-row .left-panel h3{
+  width: 511px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  border-left: 2px solid #ced1d4;
+  border-top: 1px solid #ced1d4;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+  color: #aaa;
+  background-color: #f3f5f6;
+}
+
+.fourth-row .left-panel .items-container{
+  width: 491px;
+  height: 304px;
+  padding: 12px 20px 0 20px;
+  border: 1px solid #ced1d4;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.fourth-row .left-panel .items-info table{
+  border-collapse: collapse;
+}
+
+.fourth-row .left-panel ul li{
+  float: left;
+  width: 86px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  background-color: #ececef;
+  font-family: Microsoft Yahei,sans-serif;
+  font-size: 12px;
+  margin-left: 4px;
+  margin-bottom: -1px;/*notice this*/
+}
+
+.fourth-row .left-panel ul li.first-item{
+  margin-left: 0;
+  width: 81px;
+  height: 27px;
+  background-color: #fff;
+  border: 1px solid #d8d8d9;
+  border-bottom: 1px solid #fff;
+}
+
+.fourth-row .left-panel table{
+  margin-left: 36px;
+  margin-top: 28px;
+}
+
+.fourth-row  .left-panel td{
+  text-align: center;
+  font-family: 宋体,sans-serif;
+  font-size: 12px;
+  color: #535353;
+  border: 1px solid #d1d2d3;
+}
+
+.fourth-row .row-1 td,
+.fourth-row .row-3 td,
+.fourth-row .row-5 td{
+  height: 28px;
+  line-height: 28px;
+}
+
+.fourth-row .row-2 td{
+  height: 32px;
+  line-height: 32px;
+}
+
+.fourth-row .row-4 td,
+.fourth-row .row-6 td{
+  height: 31px;
+  line-height: 31px;
+}
+
+.fourth-row td.col-1,
+.fourth-row td.col-3{
+  width: 99px;
+}
+
+.fourth-row td.col-2,
+.fourth-row td.col-4{
+  width: 100px;
+}
+
+.fourth-row .left-panel .items-info{
+  width: 488px;
+  height: 249px;
+  border: 1px solid #cacbcb;
+  border-bottom: 2px solid #dfdfe0;
+  overflow: hidden;
+}
+
+
+/*@fourth-row right-panel*/
+.fourth-row{
+  height: 360px;
+}
+.fourth-row .right-panel{
+  width: 350px;
+  height: 356px;
+  border: 1px solid #c7cace;
+  border-radius: 6px;
+  font-family: MIcrosoft Yahei;
+  font-size: 12px;
+}
+
+.fourth-row .right-panel h3{
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f3f5f6;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.fourth-row .right-panel h4{
+  margin-top: 16px;
+  margin-left: 50px;
+  color: #c3c2c2;
+}
+
+.fourth-row .right-panel h4.details{
+  margin-top: 0;
+}
+
+.fourth-row .right-panel h4 + p{
+  margin-top: 4px;
+  margin-left: 50px;
+  color: #535353;
+}
+
+.fourth-row .right-panel table{
+  border-collapse: collapse;
+  margin-left: 34px;
+  margin-top: 9px;
+}
+
+.fourth-row .right-panel table th{
+  height: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  color: #aaa;
+}
+
+.fourth-row .right-panel table td{
+  height: 25px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.fourth-row .right-panel table .price,
+.fourth-row .right-panel table .principal{
+  box-sizing: border-box;/*notice this*/
+  display: inline-block;
+  border: none;
+  padding-left: 14px;
+}
+
+.fourth-row .right-panel table .price{
+  width: 95px;
+  border-right: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel table th.price{
+  border-top: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel table td.price{
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel table th.principal{
+  width: 185px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel table td.principal{
+  width: 220px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel form{
+  height: 35px;
+  line-height: 35px;
+  margin: 108px 34px 0 34px;
+  border-top: 1px solid #e7e8e7;
+}
+
+.fourth-row .right-panel form .check{
+  float: left;
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: d6d6d6;
+  margin-top: 10px;
+}
+
+.fourth-row .right-panel form label{
+  margin-left: 8px;
+}
+
+.fourth-row .right-panel form .button{
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: #388bc2;
+  color: #fff;
+  border: none;
+  margin-left: 132px;
+}
+
+.fourth-row .right-panel form .button:hover{
+  cursor: pointer;
+}
+
+
+
+/*@fifth-row*/
+
+.fifth-row{
+  margin-top: 8px;
+}
+
+.fifth-row .calendar{
+  float: left;
+  width: 350px;
+  height: 355px;
+  background-color: #fff;
+}
+
+.fifth-row .ranking{
+  float: right;
+  width: 530px;
+  height: 355px;
+  background-color: #fff;
+}
+
+.fifth-row .calendar,
+.fifth-row .ranking{
+  border: 1px solid #bfc3c8;
+  border-radius: 5px;
+}
+
+.fifth-row h3{
+  height: 39px;
+  line-height: 39px;
+  background-color: #f3f5f6;
+  padding-left: 20px;
+  font-family: Microsoft Yahei;
+  font-size: 12px;
+  color: #aaa;
+  border-bottom: 1px solid #e7e8eb;
+}
+
+.fifth-row .calendar form {
+  padding-top: 10px;
+  margin-left: 22px;
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+}
+
+.fifth-row .calendar form *{
+  border: 1px solid #cdcece;
+}
+
+.fifth-row .calendar form select{
+  height: 22px;
+  margin-right: 6px;
+}
+
+.fifth-row .calendar form select.year{
+  width: 64px;
+}
+
+.fifth-row .calendar form select.month{
+  width: 85px;
+}
+
+.fifth-row .calendar form select.label-date{
+  width: 75px;
+}
+
+.fifth-row .calendar form .button{
+  width: 64px;
+  height: 22px;
+  background-color: #fff;
+}
+
+
+/*table*/
+.fifth-row .calendar .week{
+  width: 308px;
+  margin-top: 10px;
+  margin-left: 22px;
+  border-top: 1px solid #a9cfec;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.fifth-row .calendar .week span{
+  display: inline-block;
+  width: 44px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 12px;
+  text-align: center;
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+}
+
+.fifth-row .calendar table{
+  margin-top: 4px;
+  margin-left: 22px;
+  text-align: center;
+  font-family: 黑体,sans-serif;
+  border-spacing: 4px;/*notice this ,if you set boder-collapse to collapse,it won't work*/
+}
+
+.fifth-row .calendar table td {
+  width: 39px;
+  height: 39px;
+  font-size: 11px;
+  color: #494949;
+}
+
+.fifth-row .calendar table td p.festival{
+  color: #c9161d;
+}
+
+.fifth-row .calendar table td.labeled{
+  border: 1px solid #f8d564;
+}
+
+.fifth-row .calendar table td.col-6 .number,
+.fifth-row .calendar table td.col-7 .number{
+  color: #cd3539;
+}
+
+
+
+/*@ranking*/
+.fifth-row .ranking table{
+  margin-left: 40px;
+  margin-top: 18px;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 黑体,sans-serif;
+  font-size: 12px;
+}
+
+.fifth-row .ranking table th{
+  font-size: 13px;
+  height: 26px;
+  border: 1px solid #cacbcb;
+}
+
+.fifth-row .ranking table td{
+  height: 23px;
+  border: 1px solid #cacbcb;
+}
+
+.fifth-row .ranking table .public-car td{
+  height: 26px;
+}
+
+.fifth-row .ranking table td:nth-child(1){
+  width: 66px;
+}
+
+.fifth-row .ranking table td:nth-child(2){
+  width: 90px;
+}
+
+.fifth-row .ranking table td:nth-child(3){
+  width: 290px;
+}
+
+.fifth-row .ranking table tr:nth-child(11) td{
+  border-bottom: none;
+}
+
+.fifth-row .ranking table tr:nth-child(2){
+  background-color: #f4f5f6;
+}
+
+.fifth-row .ranking .histogram {
+  display: inline-block;
+  width: 167px;
+  height: 4px;
+  background-color: #ddd;
+  overflow: hidden;/*清除浮动*/
+}
+
+/*灵活使用浮动啊*/
+.fifth-row .ranking table td span.color{
+  float: left;
+  height: 4px;
+}
+
+.fifth-row .ranking table tr:nth-child(2) span.color{
+  width: 140px;
+  background-color: #ec6d51;
+}
+
+.fifth-row .ranking table tr:nth-child(3) span.color{
+  width: 121px;
+  background-color: #ec6d51;
+}
+
+.fifth-row .ranking table tr:nth-child(4) span.color{
+  width: 104px;
+  background-color: #ec6d51;
+}
+
+.fifth-row .ranking table tr:nth-child(5) span.color{
+  width: 98px;
+  background-color: #7fcbf0;
+}
+
+.fifth-row .ranking table tr:nth-child(6) span.color{
+  width: 87px;
+  background-color: #7fcbf0;
+}
+
+.fifth-row .ranking table tr:nth-child(7) span.color{
+  width: 80px;
+  background-color: #7fcbf0;
+}
+
+.fifth-row .ranking table tr:nth-child(8) span.color{
+  width: 74px;
+  background-color: #7fcbf0;
+}
+
+.fifth-row .ranking table tr:nth-child(9) span.color{
+  width: 64px;
+  background-color: #7fcbf0;
+}
+
+.fifth-row .ranking table tr:nth-child(10) span.color{
+  width: 60px;
+  background-color: #7fcbf0;
+}
+
+.fifth-row .ranking table tr:nth-child(11) span.color{
+  width: 54px;
+  background-color: #7fcbf0;
+}
+
+
+.fifth-row .ranking table tr:nth-child(2) td:nth-child(2){
+  background: url(./images/hand-pointer.png) no-repeat right 16px center;
 }
