@@ -3,16 +3,26 @@
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
-
 .clearfix:after{
     content: "";
     display: block;
     height: 0;
     visibility: hidden;
     clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
 }
 
 .container{
@@ -25,10 +35,6 @@ a{
     margin-left: 59px;
 }
 
-ul{
-    list-style: none;
-}
-
 select:hover,
 .button:hover{
   cursor: pointer;
@@ -36,12 +42,7 @@ select:hover,
 
 body{
     background-color: #eeeeed;
-}
-
-select {
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
+    font-family: 黑体,sans-serif;
 }
 
 
@@ -59,35 +60,39 @@ header{
     float: left;
     width: 36px;
     height: 36px;
-    background: url(./images/logo.png) no-repeat;
     margin-top: 10px;
     margin-left: 50px;
+    background: url(./images/logo.png) no-repeat;
 }
 
 .login{
     float: right;
     color: #fff;
-    font-family: "黑体",sans-serif;
     font-size: 12px;
     padding-left: 18px;
-    background: url(./images/log-icon.png) no-repeat left center;
     margin-right: 94px;
+    background: url(./images/log-icon.png) no-repeat left center;
 }
+
 .search-form{
     float: right;
     margin-right: 21px;
 }
+
 .search-form input{
     box-sizing: border-box;
     width: 313px;
     height: 28px;
     border: none;
+    outline: none;/*so the input box won't blink when foucused*/
     border-radius: 12px;
     padding: 0 12px 0 35px;
-    outline: none;/*so the input box won't blink when foucused*/
     background: #fff url(./images/search-icon.png) no-repeat left 17px center;
 }
 
+.search-form input:focus{
+  background-image: none;
+}
 
 /*@side-bar*/
 .side-bar{
@@ -109,20 +114,9 @@ header{
 }
 
 .user-info .photo-border{
+    float: left;
     margin-left: 45px;
     text-align: center;
-}
-
-.user-info .user-id{
-    margin-left: 18px;
-}
-
-.user-info .photo-border,
-.user-info .user-id{
-    float: left;
-}
-
-.user-info .photo-border{
     width: 55px;
     height: 55px;
     border-radius: 55px;
@@ -133,18 +127,20 @@ header{
     display: inline-block;
     width: 47px;
     height: 47px;
+    margin-top: 4px;
+    border: none;
     border-radius: 47px;
     background-color: #bababe;
-    margin-top: 4px;
+}
+
+.user-info .user-id{
+    float: left;
+    margin-left: 18px;
 }
 
 .user-achieve{
     color: #6e8095;
     margin-top: 24px;
-}
-
-.user-achieve .collect{
-    border-right: 2px solid #323647;
 }
 
 .user-achieve .collect,
@@ -156,11 +152,11 @@ header{
 
 .user-achieve .collect{
     padding-left: 63px;
+    border-right: 2px solid #323647;
 }
 
-.user-achieve .collect-number,
-.user-achieve .fans-number{
-    font-family: 黑体,sans-serif;/*字体显示效果和psd并不相同*/
+.collect-number,
+.fans-number{
     font-size: 16px;
 }
 
@@ -172,8 +168,25 @@ header{
 
 /*@report*/
 .report{
-      background-color: #383d4e;
-      padding: 14px 0;
+  background-color: #383d4e;
+  padding: 14px 0;
+}
+
+
+
+.main-list {
+  margin-left: 45px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.main-list input{
+  display: none;
+}
+
+.main-list>li>.trigger{
+  padding-left: 25px;
+  background: url(./images/hand-icon.png) no-repeat left center;
 }
 
 .list li{
@@ -192,21 +205,6 @@ header{
               url(./images/light-folder-icon.png) no-repeat left 16px center;
 }
 
-.main-list input{
-  display: none;
-}
-
-.trigger:hover{
-  cursor: pointer;
-}
-
-.main-list {
-  margin-left: 45px;
-  font-family: 黑体,sans-serif;
-  font-size: 12px;
-  color: #fff;
-}
-
 .folder{
   margin-left: 24px;
 }
@@ -215,6 +213,10 @@ header{
   padding-left: 32px;
   background: url(./images/dark-arrow.png) no-repeat left center,
               url(./images/dark-folder-icon.png) no-repeat left 16px center;
+}
+
+.trigger:hover{
+  cursor: pointer;
 }
 
 .folder .list{
@@ -234,25 +236,24 @@ header{
   color: #fff;
 }
 
-.main-list>li>.trigger{
-  padding-left: 25px;
-  background: url(./images/hand-icon.png) no-repeat left center;
+.report~div{
+  margin-top: 36px;
 }
 
-.collection p,
-.sharing p,
-.pictures p,
-.grow p,
-.account p{
+div.collection{
+  margin-top: 16px;
+}
+
+.report~div p{
   margin-left: 45px;
-  margin-top: 36px;
   padding-left: 25px;
-  font-family: 黑体,sans-serif;
   font-size: 12px;
   color: #6e8095;
 }
 
-.collection p{
+.collection p,
+.pictures p,
+.grow p{
   background: url(./images/star.png) no-repeat left center;
 }
 
@@ -260,18 +261,9 @@ header{
   background: url(./images/share.png) no-repeat left center;
 }
 
-.pictures p{
-  background: url(./images/star.png) no-repeat left center;
-}
-
-.grow p{
-  background: url(./images/star.png) no-repeat left center;
-}
-
 .account p{
   background: url(./images/account.png) no-repeat left center;
 }
-
 
 
 /*@main-content*/
@@ -284,9 +276,12 @@ header{
   line-height: 30px;
   padding-left: 30px;
   background-color: #fff;
-  font-family: 黑体,sans-serif;
   font-size: 12px;
   color: #aaa;
+}
+
+.route-nav li{
+  float: left;
 }
 
 .route-nav a{
@@ -294,32 +289,33 @@ header{
   padding: 0 6px;
 }
 
+.route-nav a:hover{
+  color: blue;
+}
+
 .route-nav .current{
-  color: #75a0c6;
+  color: #6898c2;
 }
 
 
 
 /*@first-row*/
+.first-row{
+    margin-top: 19px;
+    height: 86px;
+    background-color: #fff;
+    font-size: 12px;
+    color: #aaa;
+    border: 1px solid #dddfe1;
+}
 
-.refer{
-  width: 891px;
-  height: 86px;
-  background-color: #fff;
-  font-family: 黑体,sans-serif;
-  font-size: 12px;
-  color: #aaa;
-  border: 1px solid #dddfe1;
+.refer {
+  height: 100%;/*为什么不设高度就会超出呢*/
 }
 
 .refer .panel{
     margin-top: 15px;
-}
-
-.content-wrap.first-row{
-  margin-top: 19px;
-  border-left: 4px solid #848b97;
-  border-top: 3px solid #848b97;
+    float: left;
 }
 
 .user-input{
@@ -338,11 +334,6 @@ header{
     background-color: #388ac1;
     color: #fff;
     border: none;
-}
-
-
-.panel{
-  float: left;
 }
 
 .panel p{
@@ -364,7 +355,6 @@ header{
   position: absolute;
   top: 22px;
   right: 2px;
-  font-family: 黑体,sans-serif;
   color: #fff;
   font-size: 12px;
 }
@@ -433,6 +423,7 @@ header{
 
 .second-row .history{
   margin: 0;
+  width: 130px;
 }
 
 .second-row .data{
@@ -440,12 +431,9 @@ header{
   height: 64px;
 }
 
-.second-row .next,.second-row .previous{
+.next,
+.previous{
   width: 30px;
-}
-
-.second-row .history{
-  width: 130px;
 }
 
 .previous{
@@ -461,8 +449,8 @@ header{
   cursor: pointer;
 }
 
-.data .time,.history
-{
+.data .time,
+.history{
   font-size: 12px;
 }
 
@@ -588,14 +576,13 @@ header{
 }
 
 .deal-panel .deal-numbers .number{
-  font-family: 黑体,sans-serif;
+
   font-size: 12px;
   color: #323333;
   margin-bottom: 10px;
 }
 
 .deal-panel .deal-numbers .text{
-  font-family: 黑体,sans-serif;
   font-size: 10px;
   color: #aaa;
 }
@@ -629,7 +616,7 @@ h3,h4{
   border-top: 1px solid #ced1d4;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  font-family: 黑体,sans-serif;
+
   font-size: 12px;
   color: #aaa;
   background-color: #f3f5f6;
@@ -890,7 +877,6 @@ h3,h4{
 .fifth-row .calendar form {
   padding-top: 10px;
   margin-left: 22px;
-  font-family: 黑体,sans-serif;
   font-size: 12px;
 }
 
@@ -905,14 +891,18 @@ h3,h4{
 
 .fifth-row .calendar form select.year{
   width: 64px;
+  background: url(./images/select-public.png) no-repeat right 6px center;
 }
 
 .fifth-row .calendar form select.month{
   width: 85px;
+  padding-left: 25px;/*input，select元素是border-box模型*/
+  background: url(./images/select-public.png) no-repeat right 24px center;
 }
 
 .fifth-row .calendar form select.label-date{
   width: 75px;
+  background: url(./images/select-public.png) no-repeat right 6px center;
 }
 
 .fifth-row .calendar form .button{
@@ -938,7 +928,7 @@ h3,h4{
   line-height: 29px;
   font-size: 12px;
   text-align: center;
-  font-family: 黑体,sans-serif;
+
   font-size: 12px;
 }
 
@@ -946,7 +936,6 @@ h3,h4{
   margin-top: 4px;
   margin-left: 22px;
   text-align: center;
-  font-family: 黑体,sans-serif;
   border-spacing: 4px;/*notice this ,if you set boder-collapse to collapse,it won't work*/
 }
 
@@ -1018,10 +1007,16 @@ h3,h4{
   cursor: pointer;
 }
 
+.fifth-row .ranking table tr:nth-child(1):hover{
+  background-color: #fff;
+  cursor: auto;
+}
+
 .fifth-row .ranking .histogram {
   display: inline-block;
   width: 167px;
   height: 4px;
+  margin-left: 20px;
   background-color: #ddd;
   overflow: hidden;/*清除浮动*/
 }

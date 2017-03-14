@@ -15,7 +15,8 @@
             </form>
         </div>
     </header>
-    <div class="container main">
+
+    <div class="container main clearfix">
         <div class="side-bar">
             <div class="user">
                 <div class="user-info clearfix">
@@ -99,17 +100,17 @@
 
 
         <div class="main-content">
-            <div class="route-nav">
-                <a href="">C站</a>/
-                <a href="">个人报表</a>/
-                <a href="">文件一</a>/
-                <a class="current" href="">文档一</a>
-            </div>
+            <ul class="route-nav clearfix">
+                <li><a href="">C站</a>/</li>
+                <li><a href="">个人报表</a>/</li>
+                <li><a href="">文件一</a>/</li>
+                <li><a class="current" href="">文档一</a></li>
+            </ul>
+
             <div class="content-wrap first-row">
               <form class="refer clearfix"><!--为了消除inline-block之间的间距，标签之间不留空格-->
                 <div class="user-input clearfix">
                   <div class="panel first-panel">
-
                     <p>
                       <label for="items">查询项</label><select id="items" name="items">
                         <option value="1" selected>第一项</option>
@@ -152,7 +153,6 @@
                       </select>
                     </p>
                   </div>
-
                 </div>
                 <input class="button" type="submit" value="搜索">
               </form>
