@@ -37,6 +37,13 @@ body{
     background-color: #eeeeed;
 }
 
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+
+
 /*@header*/
 header{
     background-color: #2189bf;
@@ -170,7 +177,7 @@ header{
 .list li{
   display: block;
   height: 0;
-  overflow: hidden;
+  overflow: hidden;/*notice this*/
 }
 
 [type=checkbox]:checked ~ ul>li{/*~是兄弟选择器*/
@@ -291,7 +298,7 @@ header{
 
 
 
-/*@*/
+/*@first-row*/
 
 .refer{
   width: 891px;
@@ -311,12 +318,6 @@ header{
   margin-top: 19px;
   border-left: 4px solid #848b97;
   border-top: 3px solid #848b97;
-}
-
-select {
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
 }
 
 .user-input{
@@ -434,6 +435,7 @@ select {
 
 .second-row .data{
   width: 110px;
+  height: 64px;
 }
 
 .second-row .next,.second-row .previous{
@@ -468,16 +470,22 @@ select {
 }
 
 .previous + .data .time{
-    margin-top: 11px;
+    margin-top: 12px;
 }
 
-.previous +.data{
+.previous + .data{
+  height: 62px;
   border-top: 3px solid #4388c8;
 }
 
 .data:hover{
+  height: 62px;
   border-top: 3px solid #4388c8;
   cursor: pointer;
+}
+
+.data:hover .time{
+  margin-top: 12px;
 }
 
 .data .money{
