@@ -24,6 +24,7 @@ a{
     width: 891px;
     margin-left: 59px;
 }
+
 ul{
     list-style: none;
 }
@@ -83,6 +84,7 @@ header{
     border: none;
     border-radius: 12px;
     padding: 0 12px 0 35px;
+    outline: none;/*so the input box won't blink when foucused*/
     background: #fff url(./images/search-icon.png) no-repeat left 17px center;
 }
 
