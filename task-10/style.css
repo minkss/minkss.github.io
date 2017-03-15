@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.box{
+  width: 150px;
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.box-1{
+  height: 120px;
+}
+
+.box-2{
+  height: 100px;
+}
+
+.box-3{
+  height: 40px;
+}
+
+.box-4{
+  height: 200px;
+  border: 1px solid blue;
+}
+
+@media screen and (max-width:640px) {
+  .box-4{
+    order: -1;
+  }
+  .container{
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
