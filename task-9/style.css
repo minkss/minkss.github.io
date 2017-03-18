@@ -754,51 +754,41 @@ h3,h4{
   border-collapse: collapse;
   margin-left: 34px;
   margin-top: 9px;
-}
-
-.fourth-row .right-panel table th{
-  height: 18px;
-  line-height: 18px;
-  font-weight: normal;
-  text-align: left;
-  color: #aaa;
-}
-
-.fourth-row .right-panel table td{
-  height: 25px;
-  line-height: 25px;
   text-align: left;
 }
 
-.fourth-row .right-panel table .price,
-.fourth-row .right-panel table .principal{
+.fourth-row .right-panel th,
+.fourth-row .right-panel td{
   box-sizing: border-box;/*notice this*/
-  display: inline-block;
   border: none;
   padding-left: 14px;
 }
 
-.fourth-row .right-panel table .price{
+.fourth-row .right-panel  th{
+  height: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #aaa;
+  border-top: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel  td{
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.fourth-row .right-panel .price{
   width: 95px;
   border-right: 1px solid #e7e7e7;
 }
 
-.fourth-row .right-panel table th.price{
-  border-top: 1px solid #e7e7e7;
-}
-
-.fourth-row .right-panel table td.price{
-  border-bottom: 1px solid #e7e7e7;
-}
-
-.fourth-row .right-panel table th.principal{
+.fourth-row .right-panel table .principal{
   width: 185px;
-  border-top: 1px solid #e7e7e7;
 }
 
-.fourth-row .right-panel table td.principal{
-  width: 220px;
-  border-bottom: 1px solid #e7e7e7;
+.fourth-row .right-panel table td:last-child{
+  width: 35px;
 }
 
 .fourth-row .right-panel form{
