@@ -11,6 +11,10 @@
     clear: both;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+
 a{
     text-decoration: none;
 }
@@ -47,7 +51,7 @@ body{
 
 
 /*@header*/
-header{
+.main-header{
     background-color: #2189bf;
 }
 
@@ -79,18 +83,18 @@ header{
     margin-right: 21px;
 }
 
-.search-form input{
+.search-form .search{
     box-sizing: border-box;
     width: 313px;
     height: 28px;
     border: none;
-    outline: none;/*so the input box won't blink when foucused*/
+    outline: none;/*so the input box won't blink when focused*/
     border-radius: 12px;
     padding: 0 12px 0 35px;
     background: #fff url(./images/search-icon.png) no-repeat left 17px center;
 }
 
-.search-form input:focus{
+.search-form .search:focus{
   background-image: none;
 }
 
@@ -113,27 +117,28 @@ header{
     line-height: 57px;
 }
 
-.user-info .photo-border{
+.circle{
+  border-radius: 50%;
+}
+
+.photo-border{
     float: left;
     margin-left: 45px;
     text-align: center;
     width: 55px;
     height: 55px;
-    border-radius: 55px;
     border: 1px solid #babab7;
 }
 
-.user-info .photo{
+.photo{
     display: inline-block;
     width: 47px;
     height: 47px;
     margin-top: 4px;
-    border: none;
-    border-radius: 47px;
     background-color: #bababe;
 }
 
-.user-info .user-id{
+.user-id{
     float: left;
     margin-left: 18px;
 }
@@ -143,14 +148,14 @@ header{
     margin-top: 24px;
 }
 
-.user-achieve .collect,
-.user-achieve .fans{
+.collect,
+.fans{
     float: left;
     padding: 0 31px;
     line-height: 13px;/*不知道为什么不加就有行距*/
 }
 
-.user-achieve .collect{
+.collect{
     padding-left: 63px;
     border-right: 2px solid #323647;
 }
@@ -171,8 +176,6 @@ header{
   background-color: #383d4e;
   padding: 14px 0;
 }
-
-
 
 .main-list {
   margin-left: 45px;
@@ -228,11 +231,11 @@ header{
   background: url(./images/file.png) no-repeat left center;
 }
 
-.folder .list li a{
+.folder .list a{
   color: #6e8095;
 }
 
-.folder .list li a:hover{
+.folder .list a:hover{
   color: #fff;
 }
 
@@ -484,7 +487,7 @@ div.collection{
   margin-top: 5px;
 }
 
-.data .money .money-sign{
+.money-sign{
   color: #aeaead;
   font-size: 14px;
 }
@@ -506,7 +509,7 @@ div.collection{
   height: 95px;
 }
 
-.third-row .deal-panel{
+.deal-panel{
   width: 197px;
   height: 70px;
   float: left;
@@ -515,17 +518,13 @@ div.collection{
   border: 1px solid #d3d5d8;
 }
 
-.deal-panel.fourth{
-  margin-right: 0;
-}
-
 .deal-panel .deal-numbers{
   float: left;
   margin-left: 8px;
   margin-top: 18px;
 }
 
-.deal-panel .color-block{
+.color-block{
     float: right;
     width: 61px;
     height: 47px;
@@ -543,46 +542,46 @@ div.collection{
     padding-bottom: 7px;
 }
 
-.deal-panel.first{
+.first-deal{
   border-left: 4px solid #43b29d;
 }
 
-.deal-panel.first .color-block{
+.first-deal .color-block{
   background: #43b29d;
 }
 
-.deal-panel.second{
+.second-deal{
   border-left: 4px solid #398bc2;
 }
 
-.deal-panel.second .color-block{
+.second-deal .color-block{
   background: #398bc2;
 }
 
-.deal-panel.third{
+.third-deal{
   border-left: 4px solid #d04b36;
 }
 
-.deal-panel.third .color-block{
+.third-deal .color-block{
   background: #d04b36;
 }
 
-.deal-panel.fourth{
+.fourth-deal{
   border-left: 4px solid #e2cd47;
+  margin-right: 0;
 }
 
-.deal-panel.fourth .color-block{
+.fourth-deal .color-block{
   background: #e2cd47;
 }
 
-.deal-panel .deal-numbers .number{
-
+.deal-numbers .number{
   font-size: 12px;
   color: #323333;
   margin-bottom: 10px;
 }
 
-.deal-panel .deal-numbers .text{
+.deal-numbers .text{
   font-size: 10px;
   color: #aaa;
 }
@@ -590,24 +589,21 @@ div.collection{
 
 /*@fourth-row*/
 .fourth-row{
-    margin-top: 13px;
+  height: 360px;
+  margin-top: 13px;
 }
 
-h3,h4{
-  font-weight: normal;
-}
-
-.fourth-row .left-panel{
+.projects{
   float: left;
   background-color: #fff;
 }
 
-.fourth-row .right-panel{
+.project-report{
   float: right;
   background-color: #fff;
 }
 
-.fourth-row .left-panel h3{
+.projects h3{
   width: 511px;
   height: 40px;
   line-height: 40px;
@@ -616,13 +612,12 @@ h3,h4{
   border-top: 1px solid #ced1d4;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-
   font-size: 12px;
   color: #aaa;
   background-color: #f3f5f6;
 }
 
-.fourth-row .left-panel .items-container{
+.items-container{
   width: 491px;
   height: 304px;
   padding: 12px 20px 0 20px;
@@ -631,11 +626,11 @@ h3,h4{
   border-bottom-right-radius: 4px;
 }
 
-.fourth-row .left-panel .items-info table{
+.items-info table{
   border-collapse: collapse;
 }
 
-.fourth-row .left-panel ul li{
+.project-nav li{
   float: left;
   width: 86px;
   height: 27px;
@@ -648,7 +643,7 @@ h3,h4{
   margin-bottom: -1px;/*notice this*/
 }
 
-.fourth-row .left-panel ul li.first-item{
+li.first-project{
   margin-left: 0;
   width: 81px;
   height: 27px;
@@ -657,20 +652,28 @@ h3,h4{
   border-bottom: 1px solid #fff;
 }
 
-.fourth-row .left-panel table{
-  margin-left: 36px;
-  margin-top: 28px;
+.items-info{
+  width: 488px;
+  height: 249px;
+  border: 1px solid #cacbcb;
+  border-bottom: 2px solid #dfdfe0;
+  overflow: hidden;
 }
 
-.fourth-row  .left-panel td{
+.items-info table{
+  margin-left: 36px;
+  margin-top: 28px;
   text-align: center;
   font-family: 宋体,sans-serif;
   font-size: 12px;
   color: #535353;
+}
+
+.items-info td{
   border: 1px solid #d1d2d3;
 }
 
-.fourth-row .left-panel table td:hover{
+.items-info td:hover{
   cursor: pointer;
   background-color: #f4f5f7;
 }
@@ -703,20 +706,7 @@ h3,h4{
   width: 100px;
 }
 
-.fourth-row .left-panel .items-info{
-  width: 488px;
-  height: 249px;
-  border: 1px solid #cacbcb;
-  border-bottom: 2px solid #dfdfe0;
-  overflow: hidden;
-}
-
-
-/*@fourth-row right-panel*/
-.fourth-row{
-  height: 360px;
-}
-.fourth-row .right-panel{
+.project-report{
   width: 350px;
   height: 356px;
   border: 1px solid #c7cace;
@@ -725,7 +715,7 @@ h3,h4{
   font-size: 12px;
 }
 
-.fourth-row .right-panel h3{
+.project-report h3{
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -734,37 +724,37 @@ h3,h4{
   font-size: 12px;
 }
 
-.fourth-row .right-panel h4{
+.project-report h4{
   margin-top: 16px;
   margin-left: 50px;
   color: #c3c2c2;
 }
 
-.fourth-row .right-panel h4.details{
+.project-report h4.details{
   margin-top: 0;
 }
 
-.fourth-row .right-panel h4 + p{
+.project-report h4 + p{
   margin-top: 4px;
   margin-left: 50px;
   color: #535353;
 }
 
-.fourth-row .right-panel table{
+.project-report table{
   border-collapse: collapse;
   margin-left: 34px;
   margin-top: 9px;
   text-align: left;
 }
 
-.fourth-row .right-panel th,
-.fourth-row .right-panel td{
+.project-report th,
+.project-report td{
   box-sizing: border-box;/*notice this*/
   border: none;
   padding-left: 14px;
 }
 
-.fourth-row .right-panel  th{
+.project-report th{
   height: 18px;
   line-height: 18px;
   font-weight: normal;
@@ -772,33 +762,33 @@ h3,h4{
   border-top: 1px solid #e7e7e7;
 }
 
-.fourth-row .right-panel  td{
+.project-report td{
   height: 25px;
   line-height: 25px;
   border-bottom: 1px solid #e7e7e7;
 }
 
-.fourth-row .right-panel .price{
+.project-report .price{
   width: 95px;
   border-right: 1px solid #e7e7e7;
 }
 
-.fourth-row .right-panel table .principal{
+.principal{
   width: 185px;
 }
 
-.fourth-row .right-panel table td:last-child{
+.duty td:last-child{
   width: 35px;
 }
 
-.fourth-row .right-panel form{
+.project-report form{
   height: 35px;
   line-height: 35px;
   margin: 108px 34px 0 34px;
   border-top: 1px solid #e7e8e7;
 }
 
-.fourth-row .right-panel form .check{
+.project-report .check{
   float: left;
   width: 14px;
   height: 14px;
@@ -807,11 +797,11 @@ h3,h4{
   margin-top: 10px;
 }
 
-.fourth-row .right-panel form label{
+.project-report  label{
   margin-left: 8px;
 }
 
-.fourth-row .right-panel form .button{
+.project-report .button{
   display: inline-block;
   width: 50px;
   height: 26px;
@@ -821,7 +811,7 @@ h3,h4{
   margin-left: 132px;
 }
 
-.fourth-row .right-panel form .button:hover{
+.project-report .button:hover{
   cursor: pointer;
 }
 
@@ -847,8 +837,7 @@ h3,h4{
   background-color: #fff;
 }
 
-.fifth-row .calendar,
-.fifth-row .ranking{
+.calendar,.ranking{
   border: 1px solid #bfc3c8;
   border-radius: 5px;
 }
@@ -864,38 +853,38 @@ h3,h4{
   border-bottom: 1px solid #e7e8eb;
 }
 
-.fifth-row .calendar form {
+.calendar form {
   padding-top: 10px;
   margin-left: 22px;
   font-size: 12px;
 }
 
-.fifth-row .calendar form *{
+.calendar form *{
   border: 1px solid #cdcece;
 }
 
-.fifth-row .calendar form select{
+.calendar select{
   height: 22px;
   margin-right: 6px;
 }
 
-.fifth-row .calendar form select.year{
+.calendar .year{
   width: 64px;
   background: url(./images/select-public.png) no-repeat right 6px center;
 }
 
-.fifth-row .calendar form select.month{
+.calendar .month{
   width: 85px;
   padding-left: 25px;/*input，select元素是border-box模型*/
   background: url(./images/select-public.png) no-repeat right 24px center;
 }
 
-.fifth-row .calendar form select.label-date{
+.calendar .label-date{
   width: 75px;
   background: url(./images/select-public.png) no-repeat right 6px center;
 }
 
-.fifth-row .calendar form .button{
+.calendar .button{
   width: 64px;
   height: 22px;
   background-color: #fff;
@@ -903,7 +892,7 @@ h3,h4{
 
 
 /*table*/
-.fifth-row .calendar .week{
+.calendar .week{
   width: 308px;
   margin-top: 10px;
   margin-left: 22px;
@@ -911,7 +900,7 @@ h3,h4{
   border-bottom: 1px solid #e1e1e1;
 }
 
-.fifth-row .calendar .week span{
+.week span{
   display: inline-block;
   width: 44px;
   height: 29px;
@@ -922,87 +911,86 @@ h3,h4{
   font-size: 12px;
 }
 
-.fifth-row .calendar table{
+.calendar table{
   margin-top: 4px;
   margin-left: 22px;
   text-align: center;
   border-spacing: 4px;/*notice this ,if you set boder-collapse to collapse,it won't work*/
 }
 
-.fifth-row .calendar table td {
+.calendar td {
   width: 39px;
   height: 39px;
   font-size: 11px;
   color: #494949;
 }
 
-.fifth-row .calendar table td p.festival{
+.calendar .festival{
   color: #c9161d;
 }
 
-.fifth-row .calendar table td.labeled{
+.calendar .labeled{
   border: 1px solid #f8d564;
 }
 
-.fifth-row .calendar table td.col-6 .number,
-.fifth-row .calendar table td.col-7 .number{
+.calendar .col-6 .number,
+.calendar .col-7 .number{
   color: #cd3539;
 }
 
 
 
 /*@ranking*/
-.fifth-row .ranking table{
+.ranking table{
   margin-left: 40px;
   margin-top: 18px;
   border-collapse: collapse;
   text-align: center;
-  font-family: SimHei,sans-serif;
   font-size: 12px;
 }
 
-.fifth-row .ranking table th{
+.ranking th{
   font-size: 13px;
   height: 26px;
   border: 1px solid #cacbcb;
 }
 
-.fifth-row .ranking table td{
+.ranking td{
   height: 23px;
   border: 1px solid #cacbcb;
 }
 
-.fifth-row .ranking table .public-car td{
+.volkswagen td{
   height: 26px;
 }
 
-.fifth-row .ranking table td:nth-child(1){
+.ranking td:nth-child(1){
   width: 66px;
 }
 
-.fifth-row .ranking table td:nth-child(2){
+.ranking td:nth-child(2){
   width: 90px;
 }
 
-.fifth-row .ranking table td:nth-child(3){
+.ranking td:nth-child(3){
   width: 290px;
 }
 
-.fifth-row .ranking table tr:nth-child(11) td{
+.ranking tr:nth-child(11) td{
   border-bottom: none;
 }
 
-.fifth-row .ranking table tr:hover{
+.ranking tr:hover{
   background-color: #f4f5f6;
   cursor: pointer;
 }
 
-.fifth-row .ranking table tr:nth-child(1):hover{
-  background-color: #fff;
+.ranking tr:nth-child(1):hover{
+  background-color: transparent;
   cursor: auto;
 }
 
-.fifth-row .ranking .histogram {
+.histogram {
   display: inline-block;
   width: 167px;
   height: 4px;
@@ -1012,57 +1000,57 @@ h3,h4{
 }
 
 /*灵活使用浮动啊*/
-.fifth-row .ranking table td span.color{
+.color{
   float: left;
   height: 4px;
 }
 
-.fifth-row .ranking table tr:nth-child(2) span.color{
+tr:nth-child(2) .color{
   width: 140px;
   background-color: #ec6d51;
 }
 
-.fifth-row .ranking table tr:nth-child(3) span.color{
+tr:nth-child(3) .color{
   width: 121px;
   background-color: #ec6d51;
 }
 
-.fifth-row .ranking table tr:nth-child(4) span.color{
+tr:nth-child(4) .color{
   width: 104px;
   background-color: #ec6d51;
 }
 
-.fifth-row .ranking table tr:nth-child(5) span.color{
+tr:nth-child(5) .color{
   width: 98px;
   background-color: #7fcbf0;
 }
 
-.fifth-row .ranking table tr:nth-child(6) span.color{
+tr:nth-child(6) .color{
   width: 87px;
   background-color: #7fcbf0;
 }
 
-.fifth-row .ranking table tr:nth-child(7) span.color{
+tr:nth-child(7) .color{
   width: 80px;
   background-color: #7fcbf0;
 }
 
-.fifth-row .ranking table tr:nth-child(8) span.color{
+tr:nth-child(8) .color{
   width: 74px;
   background-color: #7fcbf0;
 }
 
-.fifth-row .ranking table tr:nth-child(9) span.color{
+tr:nth-child(9) .color{
   width: 64px;
   background-color: #7fcbf0;
 }
 
-.fifth-row .ranking table tr:nth-child(10) span.color{
+tr:nth-child(10) .color{
   width: 60px;
   background-color: #7fcbf0;
 }
 
-.fifth-row .ranking table tr:nth-child(11) span.color{
+tr:nth-child(11) .color{
   width: 54px;
   background-color: #7fcbf0;
 }
