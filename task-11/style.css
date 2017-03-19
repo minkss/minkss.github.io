@@ -157,7 +157,7 @@ p.top{
   color: silver;
 }
 
-.article>img{
+.article img{
   float: left;
   width: 30%;
 }
@@ -165,4 +165,8 @@ p.top{
 .article-info{
   margin-left: 30%;
   padding-left: 1rem;
+}
+
+.right-pic{
+  margin-left: 5%;
 }
