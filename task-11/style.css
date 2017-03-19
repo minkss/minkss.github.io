@@ -14,6 +14,7 @@ ul{
 
 h1,h2,h3,h4,h5,h6{
   font-weight: normal;
+  font-size: 1rem;
 }
 
 .clearfix:after{
@@ -27,40 +28,141 @@ h1,h2,h3,h4,h5,h6{
 html{
   font-family: Microsoft Yahei;
   font-size: 16px;
-  background-color: #fff;
 }
 
-header{
+body{
   background-color: #ccc;
+}
+
+.nav-bar,
+.columns,
+.moudle,
+.labels,
+.article{
+  background-color: #fff;
+}
+.header{
   height: 40px;
   line-height: 40px;
   color: #fff;
+  background: #00f3ff;
 }
 
-header a{
-  float: left;
-  color: #fff;
-  margin-left: 1em;
-}
-
-header h1{
+.header h1{
   float: right;
-  font-size: 1.2rem;
-  margin-right: calc(50% - 2em);
+  width: 50%;
+  margin-right: 2rem;
 }
 
-nav ul li{
-  width: calc(100% / 5 );
+.goback{
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.nav-bar{
+  height: 40px;
+  line-height: 40px;
   text-align: center;
+}
+.nav-bar li{
   float: left;
-  margin: 0
+  width: 20%;
 }
-nav ul li a{
-  display: block;
-  padding: 0.5rem 0;
+
+.nav-bar a{
   color: #000;
-  border-bottom: 3px solid transparent;
+  display: block;
+  border-bottom: 2px solid transparent;
 }
-nav ul li a:hover{
-  border-bottom: 3px solid blue;
+
+.nav-bar a:hover{
+  border-bottom: 2px solid #00f3ff;
+}
+
+.labels{
+  padding: 1rem 0;
+  margin-top: -3px;
+}
+
+.labels li{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.labels img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.labels a{
+  display: block;
+}
+
+.columns{
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+}
+
+.column{
+  float: left;
+  width: 33.33333%;
+  border-right: 2px solid #ccc;
+}
+
+.moudle{
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+
+.moudle h2{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.schemes img,
+.schemes p{
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+.schemes p{
+  background-color: #ccc;
+  margin-left: 5%;
+}
+
+p.top{
+  margin-bottom: 5%;
+}
+
+.first-row{
+  margin-bottom: 0.5rem;
+}
+
+.article{
+  padding: 0.5rem 1rem;
+  margin: 0.1rem 0;
+}
+
+.article h3{
+  font-size: 1.375rem;
+}
+
+.article p{
+  color: silver;
+}
+
+.article>img{
+  float: left;
+  width: 30%;
+}
+
+.article-info{
+  margin-left: 30%;
+  padding-left: 1rem;
 }
