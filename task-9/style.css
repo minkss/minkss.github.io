@@ -83,7 +83,7 @@ body{
     margin-right: 21px;
 }
 
-.search-form .search{
+.search{
     box-sizing: border-box;
     width: 313px;
     height: 28px;
@@ -94,7 +94,7 @@ body{
     background: #fff url(./images/search-icon.png) no-repeat left 17px center;
 }
 
-.search-form .search:focus{
+.search:focus{
   background-image: none;
 }
 
@@ -106,12 +106,12 @@ body{
     background-color: #2a2e3d;
 }
 
-.side-bar .user{
+.user{
     height: 150px;
     overflow: hidden;/*避免子margin溢出*/
 }
 
-.user .user-info{
+.user-info{
     color: #fff;
     margin-top: 18px;
     line-height: 57px;
@@ -212,7 +212,7 @@ body{
   margin-left: 24px;
 }
 
-.folder  .trigger{
+.trigger{
   padding-left: 32px;
   background: url(./images/dark-arrow.png) no-repeat left center,
               url(./images/dark-folder-icon.png) no-repeat left 16px center;
@@ -1005,52 +1005,50 @@ li.first-project{
   height: 4px;
 }
 
+.top-3{
+  background-color: #ec6d51;
+}
+
+.other-ranking{
+  background-color: #7fcbf0;
+}
+
 tr:nth-child(2) .color{
   width: 140px;
-  background-color: #ec6d51;
 }
 
 tr:nth-child(3) .color{
   width: 121px;
-  background-color: #ec6d51;
 }
 
 tr:nth-child(4) .color{
   width: 104px;
-  background-color: #ec6d51;
 }
 
 tr:nth-child(5) .color{
   width: 98px;
-  background-color: #7fcbf0;
 }
 
 tr:nth-child(6) .color{
   width: 87px;
-  background-color: #7fcbf0;
 }
 
 tr:nth-child(7) .color{
   width: 80px;
-  background-color: #7fcbf0;
 }
 
 tr:nth-child(8) .color{
   width: 74px;
-  background-color: #7fcbf0;
 }
 
 tr:nth-child(9) .color{
   width: 64px;
-  background-color: #7fcbf0;
 }
 
 tr:nth-child(10) .color{
   width: 60px;
-  background-color: #7fcbf0;
 }
 
 tr:nth-child(11) .color{
   width: 54px;
-  background-color: #7fcbf0;
 }
